@@ -56,6 +56,7 @@ body {
 }
 span {
     padding: 3px;
+    transition: height 1s;
 }
 span a {
     justify-content: flex-end;
@@ -64,7 +65,8 @@ span a {
     text-transform: uppercase;
 }
 span:hover {
-    border-bottom: solid 2px #cbb055   ;
+    border-bottom: solid 2px #cbb055;
+    height: 4%;
 }
 .sobre {
     display: flex;
