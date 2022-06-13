@@ -3,36 +3,65 @@
     <head>
         <title>RASGO Estudio | arquitectura y diseño</title>
         <link rel="shortcut icon" href="./imagenes/favicon-16x16.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="estilostres.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body id="gridTotal">
-<header class="cabecera">
-            <img class="logo" src="./imagenes/logorasgo.PNG" width="150" height="150" alt="logo de rasgo">
-            
-            <nav id="menu">
-            <span><a href="index.html"> Inicio</a></span> 
-            <span><a href="./paginas/proyectos.html"> Proyectos</a></span>
-            <span><a href="./paginas/en_obra.html"> En obra</a></span>
-            <span><a href="./paginas/sobre_nosotros.html">Sobre nosotros</a></span>
-            <span><a href="./paginas/contacto.html"> Contacto</a><span>
-            </nav>
-            
-</header>
-<main class="sobre">
-    <video class="video" width="500" height="300" controls>
-    <source src="./imagenes/introvideo-rasgo.mp4" type="video/mp4">
-    </video>
-    <p> Somos un estudio de arquitectura, especializados en sistema en seco: precisamente paneles SIP. Es un sistema practico, eficiente y de rápido montaje. Más allá del sistema, la idea del estudio es acercar la arquitectura a la gente. Poder dar un servicio y una asistencia personalizada, dedicada a cada caso, cada situación, posibilidades económicas y contexto.</p>
+    <nav class="cabecera navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <p class="navbar-brand">
+              <img src="./imagenes/logorasgo.PNG" alt="logo de Rasgo" width="200" height="200" class="d-inline-block align-text-top"></p>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Proyectos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./paginas/proyectos.html">Todos nuestros proyectos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./paginas/proyecto1.html">Proyecto B1</a></li>
+                </ul>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/en_obra.html">En obra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/sobre_nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<main class="container">
+    <div class="row">
+        <div class="sobre col-12">
+            <video class="video" width="500" height="300" controls>
+                <source src="./imagenes/introvideo-rasgo.mp4" type="video/mp4">
+                </video>
+                <p> Somos un estudio de arquitectura, especializados en sistema en seco: precisamente paneles SIP. Es un sistema practico, eficiente y de rápido montaje. Más allá del sistema, la idea del estudio es acercar la arquitectura a la gente. Poder dar un servicio y una asistencia personalizada, dedicada a cada caso, cada situación, posibilidades económicas y contexto.</p> 
+        </div>
+    <div class="col-sm-6 col-lg-6">
+        <p class="proyectosMenu"><a href='./paginas/proyectos.html'><img class="transitionMenu"  src="./imagenes/s_proyecttos.png" width="400" height="400" alt="boton de servicio 1" ></a></p>
+        <p class="obraMenu"><a href="./paginas/en_obra.html"><img class="transitionMenu" src="./imagenes/s_enobra.png" width="400" height="400" alt="boton de servicio 2"></a></p>
+    </div>
+    <div class="col-sm-6 col-lg-6">
+        <p class="sobreMenu"><a href="./paginas/sobre_nosotros.html" ><img class="transitionMenu" src="./imagenes/s_sobrenos.png" width="400" height="400" alt="boton de servicio 2"></a></p>
+        <p class="contactoMenu" id="contacto"><a href="./paginas/contacto.html"><img class="transitionMenu" src="./imagenes/s_contacto.png" width="400" height="400" alt="boton de servicio 2"></a></p>    </div>
+      </div>
 </main>
-<nav class="menuDos">
-        <ul>
-            <li class="proyectosMenu"><a href='./paginas/proyectos.html'><img class="transitionMenu"  src="./imagenes/s_proyecttos.png" width="400" height="400" alt="boton de servicio 1" ></a></li>
-            <li class="obraMenu"><a href="./paginas/en_obra.html"><img class="transitionMenu" src="./imagenes/s_enobra.png" width="400" height="400" alt="boton de servicio 2"></a></li>
-            <li class="sobreMenu"><a href="./paginas/sobre_nosotros.html" ><img class="transitionMenu" src="./imagenes/s_sobrenos.png" width="400" height="400" alt="boton de servicio 2"></a></li>
-            <li class="contactoMenu" id="contacto"><a href="./paginas/contacto.html"><img class="transitionMenu" src="./imagenes/s_contacto.png" width="400" height="400" alt="boton de servicio 2"></a></li>
-        </ul>
-</nav>
 <footer id="pie">
     <p> RASGO Estudio® </p>
     <section id="redes">
@@ -41,5 +70,6 @@
        <a href="mailto:rasgo.arq@gmail.com"><img src="./imagenes/email.png" alt="logo de email"></a>
     </section>
 </footer>
+<script src="./js/bootstrap.js"></script>
 </body>
 </html>

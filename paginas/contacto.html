@@ -3,24 +3,51 @@
 <head>
     <link rel="shortcut icon" href="../imagenes/favicon-16x16.png" type="image/x-icon">
     <link rel="icon" href="../imagenes/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../estilostres.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> RASGO | Contacto </title>
 </head>
 <body id="gridContacto">
-    <header class="cabecera cabeceraC">
-        <img class="logo" src="../imagenes/logorasgo.PNG" width="150" height="150" alt="logo de rasgo">
-        <nav id="menu">
-            <span><a href="../index.html"> Inicio</a></span> 
-            <span><a href="../paginas/proyectos.html"> Proyectos</a></span>
-            <span><a href="../paginas/en_obra.html"> En obra</a></span>
-            <span><a href="../paginas/sobre_nosotros.html">Sobre nosotros</a></span>
-            <span><a href="../paginas/contacto.html"> Contacto</a><span>
-        </nav>
-    </header>
+    <nav class="cabecera navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <p class="navbar-brand">
+              <img src="../imagenes/logorasgo.PNG" alt="logo de Rasgo" width="200" height="200" class="d-inline-block align-text-top"></p>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Proyectos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../paginas/proyectos.html">Todos nuestros proyectos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../paginas/proyecto1.html">Proyecto B1</a></li>
+                </ul>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/en_obra.html">En obra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/sobre_nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <main class="gridContacto">
         <div id="mensajes">
-    <h2>Escribinos</h2>
+    <h3>Escribinos</h3>
     <form action="">Mandanos un mensaje para saber mas</form>
     <input class="cajasContacto" type="name" name="nombrecompleto" placeholder="Nombre Completo">
     <input class="cajasContacto" type="email" name="correo" placeholder="Correo electronico">
@@ -31,7 +58,7 @@
     </section>
         </div>
 <div id="datosContacto">
-    <h2>Donde encontrarnos</h2>
+    <h3>Donde encontrarnos</h3>
     <ul>
         <li> <a href="https://www.instagram.com/rasgo.estudio" target="_blank">@rasgo.estudio</a></li>
         <li> <a href="https://wa.me/5491166024438"target="_blank"> +54 9 11 660 244 38</a></li>
@@ -50,5 +77,6 @@
     <a href="mailto:rasgo.arq@gmail.com"><img src="../imagenes/email.png" alt="logo de email"></a>
     </section>
 </footer>
+<script src="../js/bootstrap.js"></script>
 </body>
 </html>
